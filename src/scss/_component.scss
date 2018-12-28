@@ -1,0 +1,213 @@
+// header
+header{
+  padding-top: 40px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  color: $white;
+
+  .logo{
+    height: 52px;
+    font-size: 36px;
+    text-transform: uppercase;
+    align-self: flex-start;
+
+    .first-part{
+      width: 52px;
+      font-weight: $fontBold;
+      background-color: $white;
+      color: $logoLetter;
+      text-align: center;
+      border: 3px solid $white;
+    }
+
+    .second-part{
+      padding: 0 10px;
+      font-weight: $fontLight;
+      border: 3px solid $white;
+    }
+  }
+
+  nav{
+    font-family: $fontFamilySourceSansPro;
+    font-weight: $fontBold;
+    text-transform: uppercase;
+
+    li{
+      a{
+        display: flex;
+        align-items: center;
+        height: 52px;
+        transition: all .2s;
+        border-bottom: 1px solid transparent;
+
+        &:hover{
+          color: $red;
+          border-bottom: 1px solid $red;
+        }
+      }
+
+      & + li{
+        margin-left: 55px;
+      }
+    }
+  }
+}
+@media (max-width: 992px){
+  header{
+    nav{
+      li{
+        a {
+          height: unset;
+        }
+
+        & + li{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px){
+  header{
+    padding-top: 20px;
+
+    .logo{
+      height: 33px;
+      font-size: 26px;
+
+      .first-part{
+        width: 33px;
+      }
+
+      .second-part{
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+//buttons
+button.btn{
+  font-weight: $fontBold;
+  color: $white;
+  text-transform: uppercase;
+  padding: 15px 0;
+  width: 222px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+   &.btn-default{
+     border: 1px solid $white;
+     background-color: transparent;
+
+     &:hover{
+       background-color: $red;
+       color: $white;
+     }
+   }
+}
+@media (max-width: 992px){
+  button.btn{
+    padding: 10px 0;
+    max-width: 150px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px){
+  button.btn{
+    padding: 8px 0;
+    max-width: 130px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 480px){
+  button.btn{
+    max-width: 100px;
+    font-size: 10px;
+  }
+}
+
+// slicknav menu
+.slicknav_menu{
+  display:none;
+}
+@media (max-width: 992px) {
+  #header-nav {
+    display:none;
+  }
+
+  .slicknav_menu {
+    display:block;
+
+    .slicknav_nav{
+      a{
+        padding: 10px 25px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .slicknav_menu {
+    padding: 0;
+    border-radius: 4px;
+
+    .slicknav_btn{
+      margin: 0;
+    }
+  }
+}
+
+// fontawesome icons
+.my-fa-facebook-f:before {
+  content: "\f39e";
+}
+.my-fa-twitter:before {
+  content: "\f099";
+}
+.my-fa-rss:before {
+  content: "\f09e";
+}
+.my-fa-google-plus-g:before {
+  content: "\f0d5";
+}
+.my-fa-linkedin-in:before {
+  content: "\f0e1";
+}
+.my-fa-skype:before {
+  content: "\f17e";
+}
+.my-fa-vimeo-v:before {
+  content: "\f27d";
+}
+.my-fa-tumblr:before {
+  content: "\f173";
+}
+.my-fa-chevron-up:before {
+  content: "\f077";
+}
+
+// anchor
+.anchor{
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 3%;
+  bottom: 10%;
+  border-radius: 50%;
+  transition: .2s ease-out;
+  background-color: $red;
+  text-align: center;
+  z-index: 1;
+
+  i{
+    color: $white;
+    line-height: 50px;
+  }
+
+  &.show{
+    opacity: 1;
+  }
+}

@@ -1,0 +1,68 @@
+// font
+$fontFamily: 'Open Sans', sans-serif;
+$fontFamilySourceSansPro: 'Source Sans Pro', sans-serif;
+$fontFamilyLato: 'Lato', sans-serif;
+$fontLight: 300;
+$fontRegular: 400;
+$fontSemibold: 600;
+$fontBold: 700;
+$lineHeight: 1;
+$fontSize: 14px;
+
+// color
+$logoLetter: #4a4c55;
+$red: #e74c3c;
+$lightGrey: #cbc6c0;
+$lightBlue: #f4f5f9;
+$darkGrey: #202020;
+$grey: #999999;
+
+$black: #333;
+$xsLightGrey: #f5f5f5;
+$orange: #f58220;
+$orangeLight: #ffa200;
+$green: #04ae00;
+$lightGreen: #74b67a;
+$xsLightGreen: #96cc9b;
+$pink: #de5252;
+$lightPink: #ec7171;
+$blue: #56819f;
+$white: white;
+
+// header
+$headerBg: #fff;
+
+// aside
+$asideBg: #191919;
+$asideWidth: 188px;
+$activeLinkBg: #282828;
+$activeLinkColor: #fff;
+$asideMobileWidth: 60px;
+
+// btn
+$btnFontSize: 18px;
+$btnDefaultColor: #fff;
+$btnDefaultBg: $darkGrey;
+$btnDefaultBgHover: $grey;
+$btnActionBg: $orange;
+$btnActionBgHover: $orangeLight;
+$btnDisableBg: $lightGrey;
+
+// card
+$cardBg: #fff;
+
+// title
+$titleColor: #a6a6a6;
+$titleFontSize: 16px;
+$smallTitle: 14px;
+
+// table
+$tableFontSize: 13px;
+$tableTrHover: #f1f3f3;
+$tableThHover: #f5f5f2;
+
+// modals
+$modalBg: #fff;
+
+// pagination
+$paginationHover: #f1f3f3;
